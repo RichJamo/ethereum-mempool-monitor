@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', async () => {
-  // Connect to the Ethereum node
-  const web3 = new Web3('http://localhost:8545'); // Replace with your Ethereum node URL
+  // Replace YOUR_INFURA_ENDPOINT with the actual Infura endpoint
+  const infuraEndpoint = 'https://mainnet.infura.io/v3/1a34a37dbf4e44409187911e6573a844';
+
+  // Connect to the Ethereum node using Infura
+  const web3 = new Web3(new Web3.providers.HttpProvider(infuraEndpoint));
 
   // Function to fetch and display mempool information
   const updateMempool = async () => {
