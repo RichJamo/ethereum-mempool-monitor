@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
   // Replace YOUR_INFURA_ENDPOINT with the actual Infura endpoint
-  const infuraEndpoint = 'https://mainnet.infura.io/v3/1a34a37dbf4e44409187911e6573a844';
+  const infuraEndpoint = 'https://mainnet.infura.io/v3/<INSERT API KEY HERE>';
 
   try {
       // Connect to the Ethereum node using Infura
